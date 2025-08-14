@@ -315,3 +315,5 @@ if predict_clicked:
 # ------------------------ Footer ------------------------
 st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 st.markdown('<div class="footer-note">Tip: Use the toggle to enable demo visuals. Replace them with real aggregates from your dataset for production.</div>', unsafe_allow_html=True)
+st.markdown("---")
+st.caption("Developed with ❤️ by Sakib")
