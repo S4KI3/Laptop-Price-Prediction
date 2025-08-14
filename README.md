@@ -1,42 +1,35 @@
-💻 Laptop Price Prediction App
+# 💻 Laptop Price Prediction App  
 
-This project is a Machine Learning web application built using XGBoost and Streamlit that predicts the price of a laptop based on its specifications.
+This project is a **Machine Learning web application** built using **XGBoost** and **Streamlit** that predicts the price of a laptop based on its specifications.  
 
-✨ The app provides a simple UI where users can select laptop features such as brand, type, CPU, GPU, RAM, storage, screen quality, etc., and get an estimated price in Euros (€).
+✨ The app provides a simple UI where users can select laptop features such as brand, type, CPU, GPU, RAM, storage, screen quality, etc., and get an **estimated price in Euros (€)**.  
 
-🚀 Features
+---
 
-🎨 Interactive UI built with Streamlit
+## 🚀 Features  
+- 🎨 **Interactive UI** built with Streamlit  
+- 🤖 **XGBoost model** trained with **86% accuracy**  
+- 🔤 **LabelEncoder + custom mappings** used for categorical features  
+- 📊 **Colorful Graphs**:
+  - Predicted Price vs Company Average Price  
+  - RAM Distribution (Pie Chart)  
+  - CPU Speed vs Price Trend (Line Chart)  
+- 📱 Sidebar inputs for clean modern look  
+- 💰 Realistic predictions (Budget laptops ~€500, Premium MacBooks ~€2500)  
 
-🤖 XGBoost model trained with 86% accuracy
+---
 
-🔤 LabelEncoder + custom mappings used for categorical features
+## 🛠️ Tech Stack  
+- **Python 3.11**  
+- **Streamlit** (UI)  
+- **XGBoost** (ML Model)  
+- **Scikit-learn** (Preprocessing)  
+- **Matplotlib / Pandas** (Visualization)  
 
-📊 Colorful Graphs included:
+---
 
-Predicted Price vs Company Average Price
-
-RAM Distribution (Pie Chart)
-
-CPU Speed vs Price Trend (Line Chart)
-
-📱 Sidebar inputs for clean modern look
-
-💰 Realistic predictions (Budget laptops ~€500, Premium MacBooks ~€2500)
-
-🛠️ Tech Stack
-
-Python 3.11
-
-Streamlit (UI)
-
-XGBoost (ML Model)
-
-Scikit-learn (Preprocessing)
-
-Matplotlib / Pandas (Visualization)
-
-📂 Project Structure
+## 📂 Project Structure  
+```bash
 laptop-price-predictor/
 │
 ├── app.py               # Main Streamlit application
@@ -44,43 +37,45 @@ laptop-price-predictor/
 ├── encoders.pkl         # Saved LabelEncoders & mappings
 ├── requirements.txt     # Python dependencies
 └── README.md            # Project description
+```
 
-⚡ How to Run Locally
+---
 
-Clone the repository
+## ⚡ How to Run Locally  
 
-git clone https://github.com/your-username/laptop-price-predictor.git
-cd laptop-price-predictor
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/laptop-price-predictor.git
+   cd laptop-price-predictor
+   ```
 
+2. **Install dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Install dependencies
+3. **Run the Streamlit app**  
+   ```bash
+   streamlit run app.py
+   ```
 
-pip install -r requirements.txt
+4. Open in browser → [http://localhost:8501](http://localhost:8501)  
 
+---
 
-Run the Streamlit app
+## 🌍 Deployment  
+- Deploy easily on **Streamlit Cloud** (recommended for free hosting).  
+- Just connect your GitHub repo with Streamlit Cloud and run.  
 
-streamlit run app.py
+---
 
+## 🎯 Demo Predictions  
+- **Dell Notebook (8GB RAM, 256GB SSD, GTX 1050)** → ~**€1029**  
+- **Apple MacBook Pro (16GB RAM, 512GB SSD, Retina, i7, Radeon Pro)** → ~**€2458**  
 
-Open in browser → http://localhost:8501
+---
 
-🌍 Deployment
-
-Deploy easily on Streamlit Cloud (recommended for free hosting).
-
-Just connect your GitHub repo with Streamlit Cloud and run.
-
-🎯 Demo Predictions
-
-Dell Notebook (8GB RAM, 256GB SSD, GTX 1050) → ~€1029
-
-Apple MacBook Pro (16GB RAM, 512GB SSD, Retina, i7, Radeon Pro) → ~€2458
-
-📌 Future Improvements
-
-📊 Add more graphs & analytics
-
-🌎 Currency conversion (€, $, ₹)
-
-📱 Mobile responsive UI
+## 📌 Future Improvements  
+- 📊 Add more graphs & analytics  
+- 🌎 Currency conversion (€, $, ₹)  
+- 📱 Mobile responsive UI  
